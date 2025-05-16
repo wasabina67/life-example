@@ -6,4 +6,4 @@ Life Example 🚀🚀🚀
 
 ### Projects
 
-- [Life Example Kanban](https://github.com/users/wasabina67/projects/4)
+- [Life Example Kanban](https://github.com/users/wasabina67/projects/4/views/1?filterQuery=-status%3AReady)

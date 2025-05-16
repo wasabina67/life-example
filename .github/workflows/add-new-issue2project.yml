@@ -1,0 +1,29 @@
+name: add-new-issue2project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Assign
+        run: |
+          gh issue edit "$ISSUE_URL" --add-assignee "$ISSUE_AUTHOR"
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+
+  add-to-github-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add To GitHub projects
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: https://github.com/users/wasabina67/projects/4
+          github-token: ${{ secrets.PAT }}
+          labeled:
+          label-operator:

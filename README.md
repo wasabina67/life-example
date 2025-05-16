@@ -6,4 +6,4 @@ Life Example 🚀🚀🚀
 
 ### Projects
 
-- [aaa](https://example.com/)
+- [Life Example Kanban](https://github.com/users/wasabina67/projects/4)
